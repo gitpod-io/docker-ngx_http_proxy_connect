@@ -1,8 +1,8 @@
 name: Release local-runner for Mac
 
 permissions:
-  id-token: write # This is required for requesting the OIDC JWT
-  contents: write # This is required for actions/checkout and releases
+  contents: read
+  packages: write
 
 on:
   workflow_dispatch:
